@@ -1,0 +1,230 @@
+.__Home {
+	width: 100%;
+	min-height: 100vh;
+	height: 100%;
+	margin: 0;
+	padding: 0;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+}
+.__Home .table {
+	margin-top: 5rem;
+	margin-bottom: 5rem;
+	padding: 3rem;
+	background-color: white;
+	border-radius: 10px;
+	box-shadow: 0 18px 18px 0 rgb(0 0 0 / 10%), 0 18px 18px 0 rgb(0 0 0 / 10%);
+}
+.__Home .table table {
+	width: 100%;
+}
+.__Home .table table th,
+.__Home .table table td {
+	padding: 0.5rem 1rem !important;
+	border: 1px solid #cecece;
+}
+.__Home .form-div {
+	width: 100%;
+	position: relative;
+}
+.__Home .form {
+	margin-top: 10rem;
+	padding: 3rem;
+	background-color: white;
+	border-radius: 10px;
+	box-shadow: 0 18px 18px 0 rgb(0 0 0 / 10%), 0 18px 18px 0 rgb(0 0 0 / 10%);
+}
+.__Home .form h2 {
+	padding: 0 !important;
+	margin: 0 !important;
+}
+.__Home .form .fields {
+	margin: 1rem 0rem;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: flex-end;
+}
+.__Home .form .fields .row {
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: row;
+	padding: 0 !important;
+	margin: 0 !important;
+}
+.__Home .form .fields .row .col {
+	width: 100%;
+	border: 1px solid #cecece;
+	color: #cecece;
+	padding: 0.5rem 1rem;
+	margin: 0.5rem 0.5rem 0.5rem 0;
+	border-radius: 8px;
+	font-size: 18px;
+	display: flex;
+	flex-direction: row-reverse;
+	justify-content: center;
+	align-items: center;
+}
+.__Home .form .fields .row .col input:invalid ~ label .icon, 
+.__Home .form .fields .row .col input:invalid,
+.__Home .form .fields .row .col input:invalid::placeholder {
+  color: #fca09a;
+}
+.__Home .form .fields .row .col:focus ~ label .icon,
+.__Home .form .fields .row .col:focus input,
+.__Home .form .fields .row .col:focus input::placeholder {
+	color: #01d302;
+}
+.__Home .form .fields .row .col:focus-within label .icon,
+.__Home .form .fields .row .col:focus-within input,
+.__Home .form .fields .row .col:focus-within input::placeholder {
+  color: #01d302;
+}
+.__Home .form .fields .row label {
+	margin-right: 1rem;
+}
+.__Home .form .fields .row label .icon {
+	color: #cecece;
+}
+.__Home .form .fields .row input {
+	width: 100%;
+	padding: 0.5rem;
+	outline: none;
+	border: none;
+	font-size: 1rem;
+}
+.__Home .form .fields .row .checkbox-label {
+	display: flex;
+	flex-direction: row;
+	justify-content: flex-start;
+	align-items: center;
+	width: 100%;
+	position: relative;
+	margin-top: 1rem;
+}
+.__Home .form .fields .row .checkbox-label .checkbox-input {
+	width: fit-content !important;
+	margin-right: 1rem;
+	position: absolute;
+	opacity: 0;
+	cursor: pointer;
+	height: 0;
+	width: 0;
+}
+.__Home .form .checkmark {
+	position: absolute;
+	top: 0;
+	left: 0;
+	height: 25px;
+	width: 25px;
+	background-color: white;
+	border: 1px solid #cecece;
+	border-radius: 8px;
+	cursor: pointer;
+}
+.__Home .form p {
+	padding: 0 !important;
+	margin: 0.2rem 0 0 2.5rem !important;
+}
+.__Home .form .checkbox-label:hover input ~ .checkmark {
+	border: 1px solid #01d302;
+}
+.__Home .form .checkbox-label input:checked ~ .checkmark {
+	border: 1px solid #01d302;
+}
+.__Home .form .checkmark:after {
+	content: "";
+	position: absolute;
+	display: none;
+}
+.__Home .form .checkbox-label input:checked ~ .checkmark:after {
+	display: block;
+}
+.__Home .form .checkbox-label .checkmark:after {
+	left: 9px;
+	top: 5px;
+	width: 5px;
+	height: 10px;
+	border: solid #01d302;
+	border-width: 0 3px 3px 0;
+	-webkit-transform: rotate(45deg);
+	-ms-transform: rotate(45deg);
+	transform: rotate(45deg);
+}
+.__Home .form .button-div button {
+	width: 100%;
+	outline: none;
+	border: none;
+	cursor: pointer;
+	padding: 1rem 2rem;
+	border-radius: 30px;
+	background-color: #01d302;
+	color: white;
+	font-size: 18px;
+	font-weight: lighter;
+	margin: 0 0 1rem 0rem;
+	transition: 300ms;
+}
+.__Home .form .button-div button:hover {
+	box-shadow: 0 10px 10px 0 rgb(0 0 0 / 10%), 0 10px 10px 0 rgb(0 0 0 / 10%);
+	transition: 300ms;
+}
+.__Home .form .tagline {
+	display: block;
+	text-align: center;
+	margin-top: 1rem;
+}
+.__Home .form #error {
+	color: #fca09a;
+	max-width: 350px;
+	margin: auto;
+}
+.__Home .form .tagline a {
+	color: #01d302;
+}
+.__Home .form .cards {
+	display: flex;
+	flex-direction: row;
+	justify-content: flex-start;
+	align-items: center;
+	width: 100%;
+	margin-top: 1rem;
+}
+.__Home .form .cards .col {
+	background-color: #dcdcdc;
+	width: 100%;
+	padding: 0.7rem 1rem;
+	margin: 0.5rem 0.5rem 0.5rem 0;
+	border-radius: 30px;
+	font-size: 18px;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+}
+.__Home .form .cards img {
+	width: 27px;
+	height: 25px;
+}
+.__Home .form .overlay {
+	position: absolute;
+	top: -10rem;
+	right: 0;
+	width: 11rem;
+}
+@media only screen and (max-width: 800px) {
+	.__Home .form {
+		width: 80%;
+	}
+
+	.__Home .form .overlay {
+		position: absolute;
+		top: -7rem;
+		right: 0rem;
+		width: 7rem;
+	}
+}
